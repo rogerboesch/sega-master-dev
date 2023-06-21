@@ -28,7 +28,7 @@ Everything else is described below
 
 ### Packages installed with Homebrew
 
-```bash
+``` bash
 brew install wget
 brew install java
 ```
