@@ -69,7 +69,7 @@ $ wget mars-m1.zip
 #### SGDK Template
 
 All you have to [download](mars-sega-vscode-template.zip) now is the visual studio code template.
-This template was initially created by xxx and modified by me to work with the marsdev toolchain
+This template was initially created by [pleft](https://github.com/pleft/SEGA_VSCode_Template) and modified by me to work with the marsdev toolchain
 
 **Clean at first the project**
 
