@@ -26,10 +26,61 @@ I assume some of them you have already if you are a programmer
 
 Everything else is described below
 
-### Packages installed with Homebrew
+### Packages to be installed with Homebrew
 
 ``` bash
-brew install wget
-brew install java
+$ brew install wget
+$ brew install java
 ```
   
+### Add to .zshrc
+
+``` bash
+$ echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+$ echo 'export MARSDEV=${HOME}/mars' >> ~/.zshrc
+$ echo 'export GDK=${MARSDEV}/m68k-elf' >> ~/.zshrc
+$ echo 'export JAVA_HOME=/usr/local/opt/openjdk' >> ~/.zshrc
+```
+
+### Download Toolchain
+
+#### For intel based Mac machines
+
+``` bash
+$ cd $HOME
+$ wget mars-intel.zip
+``` 
+
+#### For M1/M2 based Mac machines
+
+``` bash
+$ cd $HOME
+$ wget mars-m1.zip
+``` 
+
+### Visual Studio Code Integration
+
+#### Recommended VS Code Plugins
+
+- C/C++ by Microsoft
+- C/C++ Extension Pack by Microsoft
+- Genesis Code by zerasul
+
+#### SGDK Template
+
+All you have to [download](mars-sega-vscode-template.zip) now is the visual studio code template.
+This template was initially created by xxx and modified by me to work with the marsdev toolchain
+
+**Clean at first the project**
+
+- Open the folder in Visual Studio Code
+- Press Command-P
+- Enter ```task clean```
+
+In the output window you see something like this
+
+** Now build the project**
+
+- Press Command-P again
+- Enter ```task make```
+
